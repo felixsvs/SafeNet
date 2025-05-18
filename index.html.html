@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SafeNet – Die KI-Revolution gegen Hass</title>
+  <style>
+    /* Grundlegendes Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #142d4c;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    nav .logo {
+      font-weight: 900;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #33cabb;
+      cursor: default;
+      user-select: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #33cabb;
+      outline: none;
+    }
+
+    nav form {
+      display: flex;
+      align-items: center;
+    }
+
+    nav input[type="search"] {
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px 0 0 4px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+      min-width: 180px;
+    }
+
+    nav button {
+      padding: 0.4rem 0.8rem;
+      border: none;
+      background-color: #33cabb;
+      color: #142d4c;
+      font-weight: 700;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    nav button:hover,
+    nav button:focus {
+      background-color: #2aaba0;
+      outline: none;
+    }
+
+    /* Hauptbereich */
+    main {
+      flex-grow: 1;
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #33cabb;
+      margin-bottom: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      color: #55d9d1;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #33cabb;
+      padding-bottom: 0.3rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #dceef2;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background: rgba(25, 55, 75, 0.7);
+      padding: 1.8rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #142d4c;
+      color: #a0b9c6;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+      nav form input[type="search"] {
+        min-width: 120px;
+      }
+    }
+  </style>
+
+  <!-- Google Fonts Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="logo">SafeNet</div>
+    <ul>
+      <li><a href="#about">Über SafeNet</a></li>
+      <li><a href="#features">Funktionen</a></li>
+      <li><a href="#impact">Wirkung</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <form role="search" aria-label="Suche auf SafeNet">
+      <input type="search" placeholder="Suchbegriff eingeben..." name="q" />
+      <button type="submit">Suchen</button>
+    </form>
+  </nav>
+
+  <main>
+    <h1>SafeNet</h1>
+    <section id="about">
+      <h2>Was ist SafeNet?</h2>
+      <p>
+        SafeNet ist mehr als nur eine KI – es ist eine Revolution im Kampf gegen Hass und Diskriminierung in sozialen Medien.  
+        Mit modernster künstlicher Intelligenz erkennt SafeNet Hasskommentare in Echtzeit und schützt Menschen davor, Opfer von Hetze und Ausgrenzung zu werden.
+      </p>
+      <p>
+        SafeNet arbeitet dezent im Hintergrund und schafft eine digitale Umgebung, in der Respekt und Menschlichkeit wieder im Vordergrund stehen.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Funktionen von SafeNet</h2>
+      <ul>
+        <li><strong>Echtzeit-Moderation:</strong> Hasskommentare werden sofort erkannt und für die Gemeinschaft unsichtbar gemacht.</li>
+        <li><strong>Adaptive Filter:</strong> Nutzer können einstellen, auf welche Art von Hass sie besonders sensibel reagieren.</li>
+        <li><strong>Kontextuelle Erkennung:</strong> SafeNet versteht Sprache und kann subtile Diskriminierungen erkennen, die klassische Filter übersehen.</li>
+        <li><strong>Inklusive Vielfalt:</strong> SafeNet schützt alle – unabhängig von Herkunft, Geschlecht, Religion, körperlichen Voraussetzungen oder Identität.</li>
+        <li><strong>Transparenz & Datenschutz:</strong> SafeNet arbeitet verantwortungsbewusst, mit Fokus auf Privatsphäre und nachvollziehbaren Entscheidungen.</li>
+      </ul>
+    </section>
+
+    <section id="impact">
+      <h2>Warum SafeNet wichtig ist</h2>
+      <p>
+        Digitale Kommunikation prägt unsere Gesellschaft – und doch sind Hass und Diskriminierung allgegenwärtig.  
+        SafeNet stellt sich dem entgegen: Es schützt die Schwächsten, gibt Betroffenen eine Stimme und sorgt dafür, dass Netzgemeinschaften gesünder und sicherer werden.
+      </p>
+      <p>
+        Mit SafeNet starten wir eine neue Ära, in der Technologie für Respekt und Gleichberechtigung einsteht – und Hass keine Chance mehr hat.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt & Mitmachen</h2>
+      <p>Du möchtest mehr erfahren oder SafeNet in deiner Plattform integrieren? Schreib uns:</p>
+      <form action="mailto:kontakt@safenet.ai" method="post" enctype="text/plain" style="max-width: 400px;">
+        <label for="name">Name:</label><br />
+        <input id="name" name="name" type="text" required style="width: 100%; padding: 0.4rem; margin-bottom: 0.8rem;" /><br />
+        <label for="email">E-Mail:</label><br />
+        <input id="email" name="email" type="email" required style="width: 100%; padding: 0.4rem; margin-bottom: 0.8rem;" /><br />
+        <label for="message">Nachricht:</label><br />
+        <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.4rem; margin-bottom: 1rem;"></textarea><br />
+        <button type="submit" style="background-color:#33cabb;color:#142d4c;border:none;padding:0.6rem 1.2rem;font-weight:700;cursor:pointer;border-radius:4px;">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 SafeNet – KI gegen Hass & Diskriminierung
+  </footer>
+</body>
+</html>
